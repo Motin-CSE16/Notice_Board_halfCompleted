@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.motinsheikh.notice_board">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,6 +19,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".PostActivity" />
+        <activity android:name=".ForgetPasswordActivity" />
+        <activity android:name=".UploadActivityOfficial" />
+        <activity android:name=".UploadActivityOthers" />
+        <activity android:name=".UploadActivityResult" />
+        <activity android:name=".My_Recycler_View_Activity" />
+        <activity android:name=".ContacUsActivity"></activity>
     </application>
 
 </manifest>

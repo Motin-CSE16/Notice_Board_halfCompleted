@@ -1,5 +1,6 @@
 package com.motinsheikh.notice_board;
 
+import android.content.Intent;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -10,6 +11,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
@@ -84,6 +86,19 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
 
-
+        if(item.getItemId()==R.id.login_id)
+        {
+            Intent intent = new Intent(getApplicationContext(),SignInActivity.class);
+            startActivity(intent);
+        }
+        if (item.getItemId()==R.id.contac_id)
+        {
+            Intent intent=new Intent(getApplicationContext(),ContacUsActivity.class);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

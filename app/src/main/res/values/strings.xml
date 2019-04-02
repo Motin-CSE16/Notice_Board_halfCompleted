@@ -3,4 +3,12 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="Notice_type">
+        <item>Result_Notice</item>
+
+        <item>Official_Notice</item>
+
+        <item>Others_Notice</item>
+    </string-array>
+
 </resources>
