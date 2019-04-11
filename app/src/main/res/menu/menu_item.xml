@@ -13,7 +13,7 @@
         />
     <item
         android:id="@+id/contac_id"
-        android:title="Contac us"
+        android:title="Contact us"
         app:showAsAction="never"
         />
 

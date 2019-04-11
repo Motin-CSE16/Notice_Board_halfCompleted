@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#22ffde"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <EditText
+        android:id="@+id/sign_upemailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textColor="#ff2222"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/sign_uppasswordid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#ff2222"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/sign_upbuttonid"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="202dp"
+        android:text="Sign up"
+        android:textColor="#c822ff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/sign_inTextviewid"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="168dp"
+        android:gravity="center"
+        android:text="Are you already registered ? Sign in ?"
+        android:textColor="#ff2d22"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true" />
+
+    <ProgressBar
+        android:id="@+id/sign_upprogressbarid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+</RelativeLayout>
